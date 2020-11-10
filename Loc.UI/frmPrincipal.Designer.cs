@@ -33,9 +33,9 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblLoc = new System.Windows.Forms.Label();
             this.locaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alugarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblLoc = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,7 @@
             this.filmesToolStripMenuItem.Name = "filmesToolStripMenuItem";
             this.filmesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.filmesToolStripMenuItem.Text = "Filmes";
+            this.filmesToolStripMenuItem.Click += new System.EventHandler(this.filmesToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -79,18 +80,6 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
-            // lblLoc
-            // 
-            this.lblLoc.AutoSize = true;
-            this.lblLoc.Font = new System.Drawing.Font("Castellar", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblLoc.Location = new System.Drawing.Point(89, 106);
-            this.lblLoc.Name = "lblLoc";
-            this.lblLoc.Size = new System.Drawing.Size(632, 58);
-            this.lblLoc.TabIndex = 1;
-            this.lblLoc.Text = "LOCADORA DE FILMES";
-            this.lblLoc.Click += new System.EventHandler(this.label1_Click);
             // 
             // locaçãoToolStripMenuItem
             // 
@@ -105,6 +94,18 @@
             this.alugarToolStripMenuItem.Name = "alugarToolStripMenuItem";
             this.alugarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alugarToolStripMenuItem.Text = "Alugar";
+            // 
+            // lblLoc
+            // 
+            this.lblLoc.AutoSize = true;
+            this.lblLoc.Font = new System.Drawing.Font("Castellar", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblLoc.Location = new System.Drawing.Point(89, 106);
+            this.lblLoc.Name = "lblLoc";
+            this.lblLoc.Size = new System.Drawing.Size(632, 58);
+            this.lblLoc.TabIndex = 1;
+            this.lblLoc.Text = "LOCADORA DE FILMES";
+            this.lblLoc.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmPrincipal
             // 

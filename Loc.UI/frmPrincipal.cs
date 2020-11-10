@@ -32,5 +32,11 @@ namespace Loc.UI
             frmClientes form = new frmClientes();
             form.Show();
         }
+
+        private void filmesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFilmes form1 = new frmFilmes();
+            form1.Show();
+        }
     }
 }

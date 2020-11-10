@@ -113,15 +113,15 @@
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(423, 80);
+            this.txtCidade.Location = new System.Drawing.Point(423, 72);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(273, 20);
+            this.txtCidade.Size = new System.Drawing.Size(274, 20);
             this.txtCidade.TabIndex = 21;
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(378, 74);
+            this.lblCidade.Location = new System.Drawing.Point(377, 74);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(40, 13);
             this.lblCidade.TabIndex = 20;

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{689CADB2-9C5C-4038-849A-C63FBA9A35A6}</ProjectGuid>
+    <ProjectGuid>{198CBF72-4B85-43A0-A37B-AD810C9BB68A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Loc.BLL</RootNamespace>
-    <AssemblyName>Loc.BLL</AssemblyName>
+    <RootNamespace>Loc.DAL</RootNamespace>
+    <AssemblyName>Loc.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,10 +71,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Loc.DAL\Loc.DAL.csproj">
-      <Project>{198cbf72-4b85-43a0-a37b-ad810c9bb68a}</Project>
-      <Name>Loc.DAL</Name>
-    </ProjectReference>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Loc.DTO\Loc.DTO.csproj">
       <Project>{a815ba2e-4c38-496e-8971-cec8918aaa97}</Project>
       <Name>Loc.DTO</Name>
