@@ -161,6 +161,15 @@
             // cboGenero
             // 
             this.cboGenero.FormattingEnabled = true;
+            this.cboGenero.Items.AddRange(new object[] {
+            "Aventura",
+            "Ação",
+            "Comédia",
+            "Ficção Científica",
+            "Infantil",
+            "Romance",
+            "Suspense",
+            "Terror"});
             this.cboGenero.Location = new System.Drawing.Point(49, 59);
             this.cboGenero.Name = "cboGenero";
             this.cboGenero.Size = new System.Drawing.Size(163, 21);

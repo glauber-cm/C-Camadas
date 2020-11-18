@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Loc.BLL;
+using Loc.DTO;
+using System;
 using System.Windows.Forms;
 
 namespace Loc.UI
@@ -25,6 +20,29 @@ namespace Loc.UI
         private void frmClientes_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            Clientes cli = new Clientes();
+            cli.Nome = txtNome.Text;
+            cli.Cpf = txtCpf.Text;
+            cli.Email = txtEmail.Text;
+            cli.Telefone = txtTelefone.Text;
+            cli.DtNascimento = DateTime.Parse(txtDataNasc.Text);
+            cli.Sexo = cmbSexo.Text;
+            cli.Cep = txtCep.Text;
+            cli.Endereco = txtEndereco.Text;
+            cli.Bairro = txtBairro.Text;
+            cli.Cidade = txtCidade.Text;
+            cli.Estado = cmbEstado.Text;
+
+            new ClientesBLL().InserirCliente(cli);
         }
     }
 }
